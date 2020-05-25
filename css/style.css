@@ -72,13 +72,13 @@ nav h1{
     
 @media screen and (max-width: 767px) {
     /* start of medium tablet styles */
-    .menus, .social{
-        display: none;
-    }
+    
     
 }
 @media screen and (max-width: 479px) {
-    
+    .menus, .social{
+        display: none;
+    }
     
 }
 
