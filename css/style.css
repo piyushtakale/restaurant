@@ -75,7 +75,7 @@ nav h1{
     
     
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     .menus2{
         height: 100vh;
         position: absolute;
