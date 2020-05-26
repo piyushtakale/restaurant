@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 header{
-    position: absolute;
+    position: fixed;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.8);
     
@@ -24,10 +24,11 @@ nav{
 nav li{
     list-style: none;
     margin-right: 5%;
-}
-nav li a{
-    text-decoration: none;
     color: aliceblue;
+}
+li a{
+    text-decoration: none;
+    
     
 }
 nav h1{
@@ -56,15 +57,14 @@ nav h1{
     display: flex;
     justify-content: center;
 }
-.menus2{
-    display: none;
-    height: 100vh;
-    position: absolute;
-    width: 60%;
-    background-color: #ffffff;
-    right: 0;
-    
-}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 991px) {
     /* start of large tablet styles */
     
@@ -75,9 +75,78 @@ nav h1{
     
     
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
+    .menus2{
+        height: 100vh;
+        position: absolute;
+        width: 60%;
+        background-color: #ffffff;
+        right: 0;
+        overflow: hidden;
+        transition: width 0.2s;
+    }
     .menus, .social{
         display: none;
+    }
+    .menus2 .nav-links{
+        display: inline;
+        text-align: center;
+    }
+    .menus2 > .menus{
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10vh;
+        position: absolute;
+    }
+    .menus2 li{
+        list-style: none;
+        color: black;
+        margin-bottom: 3vh;
+    }
+    .menus2 a{
+        color: black;
+    }
+    .menus2 .close-nav{
+        height: 4vh;
+        width: 4vh;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 3.2vh;
+        
+    }
+    .hamburger{
+        position: fixed;
+        
+        display: block;
+        
+        width: 5%;
+        height: 2.5%;
+        margin-left: 42%;
+        margin-top: 0%;
+    }
+    #line1, #line2, #line3{
+        background-color: #f5f5f5;
+        width: 100%;
+        margin-bottom: 30%;
+        height: 15%;
+        
+    }
+    #line4{
+        margin-top: 1.3vh;
+        position: absolute;
+        width: 100%;
+        height: .3vh;
+        background-color: #424242;
+        transform: rotate(45deg);
+    }
+    #line5{
+        margin-top: 1.5vh;
+        position: absolute;
+        width: 100%;
+        height: .3vh;
+        background-color: #424242;
+        transform: rotate(315deg);
     }
     
 }

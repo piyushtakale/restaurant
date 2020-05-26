@@ -34,9 +34,45 @@
                     </li>
                 </ul>
             </div>
-        
+            <div class="hamburger" onclick="openNav()">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div> 
     </header>
-    <div class="menus2"></div>
-    <h1>sample</h1>
+    
+    <div class="menus2" id="menu2">
+        <div class="close-nav" id="menu2_close" onclick="closeNav()">
+            <div id="line5"></div>
+            <div id="line4"></div>
+            
+        </div>
+        <div class="menus">
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVATIONS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <pre>
+        olll
+
+
+
+    </pre>
+    
+    <script>
+        function closeNav(){
+            var menu = document.getElementById("menu2");
+            menu.style.width = "0";
+        }
+        function openNav() {
+            var menu = document.getElementById("menu2");
+            menu.style.width = "60%"; 
+        }
+        
+    </script>
 </body>
 </html>
