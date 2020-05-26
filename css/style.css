@@ -75,11 +75,11 @@ nav h1{
     
     
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
     .menus2{
         height: 100vh;
         position: absolute;
-        width: 60%;
+        width: 0%;
         background-color: #ffffff;
         right: 0;
         overflow: hidden;
@@ -88,7 +88,7 @@ nav h1{
     .menus, .social{
         display: none;
     }
-    .menus2 .nav-links{
+    /*.menus2 .nav-links{
         display: inline;
         text-align: center;
     }
@@ -147,7 +147,7 @@ nav h1{
         height: .3vh;
         background-color: #424242;
         transform: rotate(315deg);
-    }
+    }*/
     
 }
 
