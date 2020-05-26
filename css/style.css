@@ -88,7 +88,7 @@ nav h1{
     .menus, .social{
         display: none;
     }
-    /*.menus2 .nav-links{
+    .menus2 .nav-links{
         display: inline;
         text-align: center;
     }
@@ -147,7 +147,7 @@ nav h1{
         height: .3vh;
         background-color: #424242;
         transform: rotate(315deg);
-    }*/
+    }
     
 }
 
