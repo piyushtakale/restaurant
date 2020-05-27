@@ -7,7 +7,7 @@
 header{
     position: fixed;
     width: 100%;
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 0, 0, 0.0);
     
 }
 nav{
@@ -26,9 +26,12 @@ nav li{
     margin-right: 5%;
     color: aliceblue;
 }
-li a{
+a{
     text-decoration: none;
-    
+}
+nav a{
+    text-decoration: none;
+    color: #f5f5f5; 
     
 }
 nav h1{
@@ -57,13 +60,108 @@ nav h1{
     display: flex;
     justify-content: center;
 }
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    
+}
+.menus2{
+    display: none;
+}
+.home > .bg-black > h1{
+    color: #f5f5f5;
+    font-family: 'Lobster', cursive;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 700%;
+}
+.home > .bg-black > p{
+    color: #f5f5f5;
+    
+    font-style: italic;
+    font-weight: 100;
+    font-size: 25px;
+}
+.home > .bg-black {
+    padding-top: 30vh;
+    overflow: hidden;
+}
 
+.specials {
+    margin-top: 10%;
+    width: 100%;
+    height: fit-content;
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    overflow: visible;
+}
+.specials > .bg-black{
+    background-color: rgb(0, 0, 0, 0.8); 
+    width: 100%;
+    height: fit-content;
+    overflow: visible;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.specials h1{
+    color: #f5f5f5;
+    font-family: 'Lobster', cursive;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 300%;
+}
+.specials> div > p{
+    color: #f5f5f5;
+    
+    font-style: italic;
+    font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 2%;
+}
+.specials h2{
+    color: #f5f5f5;
+    font-family: 'times new roman', cursive;
+    font-style: italic;
+    font-weight: 100; 
+    
+}
+.specialsg{
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    /*grid-template-columns: 20% 20% 20% 20%;*/
+    /*grid-template-columns: 45% 45%;*/
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
 
-
-
-
-
-
+    
+}
+.specialsg div{
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    justify-self: center;
+}
+.specialsg p{
+    color: #f5f5f5;
+    font-family: 'times new roman', cursive;
+    font-style: italic;
+    font-weight: 100; 
+    margin-top: 4%;
+}
 
 @media screen and (max-width: 991px) {
     /* start of large tablet styles */
@@ -84,6 +182,7 @@ nav h1{
         right: 0;
         overflow: hidden;
         transition: width 0.2s;
+        display: block;
     }
     .menus, .social{
         display: none;
@@ -106,6 +205,7 @@ nav h1{
     }
     .menus2 a{
         color: black;
+        text-decoration: none;
     }
     .menus2 .close-nav{
         height: 4vh;
@@ -148,7 +248,34 @@ nav h1{
         background-color: #424242;
         transform: rotate(315deg);
     }
+    .home > .bg-black > h1{
+        color: #f5f5f5;
+        
+        font-weight: 100;
+        font-size: 3.6em;
+    }
+    .home > .bg-black > p{
+        font-size: 15px;
+    }
+    .specials p{
+        font-size: 15px;
+    }
+    .specialsg{
+        width: 70%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        /*grid-template-columns: 20% 20% 20% 20%;*/
+        /*grid-template-columns: 45% 45%;*/
+        /*grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25% 25% 25% 25%;*/
+        grid-template-columns: 1fr;
+        
+        
     
+        
+    }
 }
 
 
