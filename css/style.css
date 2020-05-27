@@ -38,7 +38,7 @@ nav a{
     color: #f5f5f5; 
     
 }
-nav h1{
+nav h1, .name-h1{
     font-family: 'Abril Fatface', cursive;
     font-size: 2.5em;
     font-weight: 100;
@@ -76,6 +76,12 @@ nav h1{
 }
 .menus2{
     display: none;
+}
+.bg-black{
+    background-color: rgb(0, 0, 0, 0.8); 
+    width: 100%; 
+    height: 100vh;
+    padding: 5%;
 }
 .home > .bg-black > h1{
     color: #f5f5f5;
@@ -211,7 +217,7 @@ input[type=text], input[type=date], select, input[type=submit]{
     margin-top: 5%;
     padding: 10px;
     border: 1px solid #9c9999;
-    
+    background-color: #f5f5f5;
 }
 #submit{
     color: azure;
@@ -220,19 +226,56 @@ input[type=text], input[type=date], select, input[type=submit]{
 }
 #submit:focus, #submit:hover{
     background-color: rgb(26, 26, 26);
+    
 }
 option{
     max-height: 100px;
 }
 input[type=text]:focus, input[type=date]:focus{
     border: 1px solid black;
+    background-color: #f5f5f5;
 }
 input[type="date"]::-webkit-inner-spin-button
  {
     display: none;
     -webkit-appearance: none;
 }
+.footer, .footer >{
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    height: auto;
+}
+.footer > .bg-black{
+    height: auto;
+    padding: 3%;
+    text-align: center;
+}
 
+.footer .connect{
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2%;
+    margin-bottom: 2% ;
+}
+.footer .sub-header{
+    color: #f5f5f5;
+    font-weight: 100;
+}
+.whiteob{
+    color: #9c9999;
+    margin-top: 1%;
+}
+.cpr {
+    padding: 1%;
+    color: rgb(151, 129, 129);
+    background-color: black;
+    margin: 0 -3% -3% -3%;
+}
 @media screen and (max-width: 991px) {
     /* start of large tablet styles */
     
@@ -361,12 +404,23 @@ input[type="date"]::-webkit-inner-spin-button
         font-size: 13px;
     }
     .chef{
+        margin-top: 5%;
         height: 300px;
         width: 80%;
         background-size: cover;
     }
-    
-
+    .footer{
+        font-size: 85%;
+    }
+    .footer .connect{
+        grid-template-columns: 1fr;
+    }
+    .footer .connect-blocks{
+        margin-top: 5%;
+    }
+    .footer .cpr{
+        margin-top: 5%;
+    }
 }
 
 
