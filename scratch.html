@@ -1,39 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-#myDIV {
-  height: 250px;
-  width: 250px;
-  overflow: auto;
-}
 
-#content {
-  height: 800px;
-  width: 2000px;
-  background-color: coral;
-  margin-top: 50%;
-}
-</style>
-</head>
-<body>
-
-<p>Scroll inside the div element to display the number of pixels the content of div is scrolled horizontally and vertically.</p>
-
-<div id="myDIV" onscroll="myFunction()">
-  <div id="content">Scroll inside me!</div>
-</div>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var elmnt = document.getElementById("myDIV");
-  var x = elmnt.scrollLeft;
-  var y = elmnt.scrollTop;
-  document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
-}
-</script>
-
-</body>
-</html>
+  <HTML>
+  
+    <HEAD>
+      <style>
+          .styled-select {
+          width: 100px;
+          height: 17px;
+          overflow: hidden;
+          overflow: -moz-hidden-unscrollable;
+          background: url(images/downarrow_blue.png) no-repeat right white;
+          border: 2px double red;
+          display: inline-block;
+          position: relative;
+        }
+        
+        .styled-select select {
+          background: transparent;
+          -webkit-appearance: none;
+          width: 100px;
+          font-size: 11px;
+          border: 0;
+          height: 17px;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        
+        body {
+          background-color: #333333;
+          color: #FFFFFF;
+        }
+        
+        .block label {
+          color: white;
+        }
+      </style>
+    </HEAD>
+    
+    <BODY>
+      <p>
+      <form action="/prepareUpdateCategoryList.do?forwardto=search">
+    
+        <fieldset class="block" id="searchBlock">
+          <p>
+            <label style="width:80px">Class</label>
+            <div class="styled-select">
+              <select property="voucherCategoryClass">
+                <option value="0">Select </option>
+                <option value="7382">steam </option>
+            </select>
+            </div>
+    
+          </p>
+        </fieldset>
+      </form>
+    </BODY>
+    
+    </HTML>

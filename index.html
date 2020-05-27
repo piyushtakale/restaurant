@@ -70,31 +70,82 @@
     </div>
     <div class="home" id="hom"><div class="bg-black" style="background-color: rgb(0, 0, 0, 0.8); width: 100%; height: 100vh;"><p>WELCOME TO</p><br><h1>Liv2eat Restaurant</h1><p>If you <br> Eat to Live we will make you <br> Live to Eat...</p></div></div>
 
+    <div class="story">
+        <div class="storyt">
+            <h1>Our Story...</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered <br> alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't </p><p> anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators ob </p><p> n the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary
+            </p>
+        </div>
+        <div class="chef"></div>
+    </div>
+
     <div class="specials"><div class="bg-black">
         <h1>Daily Specials</h1><p>Lorem Ipsum is simply dummy typesetting <br> Lorem Ipsum has been the industry's</p>
         
         <div class="specialsg">
             <div> 
-                <img src="images/vegitarien.png" alt="veg"> <h2>veg specials</h2><p>It is a long established fact that a reader will be distracted by the readable</p>
+                <a href="#">
+                <img src="images/vegitarien.png" alt="veg"> <h2>veg specials</h2><p>It is a long established fact that a reader will be distracted by the readable</p></a>
             </div> 
             <div> 
                 <a href="#">
                 <img src="images/hamburge.png" alt="veg"> <h2>Big Meals</h2><p> content of a page when looking at its layout. The point of using</p></a>
             </div> 
             <div> 
-                <img src="images/sea food.png" alt="veg"> <h2>Sea Food</h2><p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                <a href="#">
+                <img src="images/sea food.png" alt="veg"> <h2>Sea Food</h2><p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p></a>
             </div> 
             <div> 
-                <img src="images/desert.png" alt="veg"> <h2>Desert</h2><p>now use Lorem Ipsum as their default model text, and a search for 'lorem</p>
+                <a href="#">
+                <img src="images/desert.png" alt="veg"> <h2>Desert</h2><p>now use Lorem Ipsum as their default model text, and a search for 'lorem</p></a>
             </div> 
-            
-           
-            
-            
         </div>
 
         
     </div></div>
+
+    <div class="reserv">
+        <h1>Reservation</h1>
+        <form action="#" method="post">
+            <input placeholder="Date" class="rdate" type="text" onfocus="(this.type='date', this.value='Date')" id="rdate" name="rdate">
+            
+            <br>
+            <select name="time" id="time">
+                <option value="0">Select Time</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 AM">12:00 PM</option>
+                <option value="01:00 AM">01:00 PM</option>
+                <option value="02:00 AM">02:00 PM</option>
+                <option value="03:00 AM">03:00 PM</option>
+                <option value="04:00 AM">04:00 PM</option>
+                <option value="05:00 AM">05:00 PM</option>
+                <option value="06:00 AM">06:00 PM</option>
+                <option value="07:00 AM">07:00 PM</option>
+                <option value="08:00 AM">08:00 PM</option>
+                <option value="09:00 AM">09:00 PM</option>
+                <option value="10:00 AM">10:00 PM</option>
+                <option value="11:00 AM">11:00 PM</option>
+                
+            </select>
+            <select name="time" id="time">
+                <option value="0">Number of People</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+                <option value="9">9 People</option>
+                <option value="10">10 People</option>
+                
+            </select>
+            <input type="submit" id="submit" value="BOOK TABLE">
+        </form>
+        
+    </div>
     <div></div>
     <pre id="achha">
         olll
@@ -113,15 +164,18 @@
         function closeNav(){
             var menu = document.getElementById("menu2");
             menu.style.width = "0";
+            menu.style.boxShadow = "none";
         }
         function openNav() {
             var menu = document.getElementById("menu2");
             menu.style.width = "60%"; 
+            menu.style.boxShadow = "-200px 0px rgb(37, 37, 37, 0.8)";
         }
         function makeBlack(){
             var scrollcount = window.scrollY;
             if(scrollcount > 0){
                 document.getElementById("h1").style.backgroundColor = "rgb(0, 0, 0,"+scrollcount*0.005+")";
+                
             }
             else{
                 document.getElementById("h1").style.backgroundColor = "rgb(0, 0, 0, 0.0)";

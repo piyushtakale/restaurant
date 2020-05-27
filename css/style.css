@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body, html{
+    height: 100%;
+    position: relative;
+}
 header{
     position: fixed;
     width: 100%;
@@ -162,6 +166,72 @@ nav h1{
     font-weight: 100; 
     margin-top: 4%;
 }
+.story{
+    margin: auto;
+    margin-top: 7%;
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    
+}
+.story .chef{
+    height: 400px;
+    width: 70%;
+    background-image: url("../images/hef.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top ;
+    justify-self: center;
+}
+.storyt{
+    text-align: center;
+    width: 100%;
+    padding: 8% 10% 10% 10%;
+    justify-self: center;
+    overflow: hidden;
+    border-right: 1px solid #424242 ;
+    
+}
+.reserv{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+.reserv form{
+    text-align: center;
+}
+input[type=text], input[type=date], select, input[type=submit]{
+    outline: none;
+    width: 80%;
+    height: 50px;
+    margin-top: 5%;
+    padding: 10px;
+    border: 1px solid #9c9999;
+    
+}
+#submit{
+    color: azure;
+    border: none;
+    background-color: rgb(51, 51, 51);
+}
+#submit:focus, #submit:hover{
+    background-color: rgb(26, 26, 26);
+}
+option{
+    max-height: 100px;
+}
+input[type=text]:focus, input[type=date]:focus{
+    border: 1px solid black;
+}
+input[type="date"]::-webkit-inner-spin-button
+ {
+    display: none;
+    -webkit-appearance: none;
+}
 
 @media screen and (max-width: 991px) {
     /* start of large tablet styles */
@@ -175,14 +245,15 @@ nav h1{
 }
 @media screen and (max-width: 480px) {
     .menus2{
-        height: 100vh;
-        position: absolute;
+        height: 100%;
+        position: fixed;
         width: 0%;
         background-color: #ffffff;
         right: 0;
         overflow: hidden;
         transition: width 0.2s;
         display: block;
+        box-shadow: none; 
     }
     .menus, .social{
         display: none;
@@ -276,6 +347,26 @@ nav h1{
     
         
     }
+    .story{
+        grid-template-columns: 1fr;
+    }
+    .reserv {
+        width:100%;
+    }
+    .storyt{
+        border: none;
+        padding: 0%;
+    }
+    .storyt p{
+        font-size: 13px;
+    }
+    .chef{
+        height: 300px;
+        width: 80%;
+        background-size: cover;
+    }
+    
+
 }
 
 

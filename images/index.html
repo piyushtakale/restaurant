@@ -1,140 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIV2EAT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        #myDIV {
-  height: 250px;
-  width: 250px;
-  overflow: auto;
-}
 
-#content {
-  height: 800px;
-  width: 2000px;
-  background-color: coral;
-}
-    </style>
-</head>
-<body onscroll="makeBlack()" id="bod">
-    <header id="h1">
-        <nav>
-            <div class="logo"><h1>Liv2eat</h1></div>
-            <div class="menus">
-                <ul class="nav-links">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="menu.html">MENU</a></li>
-                    <li><a href="reservation.html">RESERVATIONS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="social">
-                <ul class="nav-links">
-                    <li>
-                        <a href="#">FB</a>
-                    </li>
-                    <li>
-                        <a href="#">INSTA</a>
-                    </li>
-                    <li>
-                        <a href="#">TW</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="hamburger" onclick="openNav()">
-                <div id="line1"></div>
-                <div id="line2"></div>
-                <div id="line3"></div>
-            </div> 
-    </header>
-    
-    <div class="menus2" id="menu2">
-        <div class="close-nav" id="menu2_close" onclick="closeNav()">
-            <div id="line5"></div>
-            <div id="line4"></div>
-            
-        </div>
-        <div class="menus">
-            <ul class="nav-links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="reservation.html">RESERVATIONS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="home" id="hom"><div class="bg-black" style="background-color: rgb(0, 0, 0, 0.8); width: 100%; height: 100vh;"><p>WELCOME TO</p><br><h1>Liv2eat Restaurant</h1><p>If you <br> Eat to Live we will make you <br> Live to Eat...</p></div></div>
-
-    <div class="specials"><div class="bg-black">
-        <h1>Daily Specials</h1><p>Lorem Ipsum is simply dummy typesetting <br> Lorem Ipsum has been the industry's</p>
-        
-        <div class="specialsg">
-            <div> 
-                <img src="images/vegitarien.png" alt="veg">![](images/vegitarien.png) <h2>veg specials</h2><p>It is a long established fact that a reader will be distracted by the readable</p>
-            </div> 
-            <div> 
-                <a href="#">
-                <img src="images/hamburge.png" alt="veg"> <h2>Big Meals</h2><p> content of a page when looking at its layout. The point of using</p></a>
-            </div> 
-            <div> 
-                <img src="images/sea food.png" alt="veg"> <h2>Sea Food</h2><p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
-            </div> 
-            <div> 
-                <img src="images/desert.png" alt="veg"> <h2>Desert</h2><p>now use Lorem Ipsum as their default model text, and a search for 'lorem</p>
-            </div> 
-            
-           
-            
-            
-        </div>
-
-        
-    </div></div>
-    <div></div>
-    <pre id="achha">
-        olll
-
-
-
-    
-
-    </pre>
-    <div id="myDIV" onscroll="myFunction()">
-        <div id="content">Scroll inside me!</div>
-      </div>
+  <HTML>
+  
+  <HEAD>
+    .styled-select {
+        width: 100px;
+        height: 17px;
+        overflow: hidden;
+        overflow: -moz-hidden-unscrollable;
+        background: url(images/downarrow_blue.png) no-repeat right white;
+        border: 2px double red;
+        display: inline-block;
+        position: relative;
+      }
       
-      <p id="demo"></p>
-    <script>
-        function closeNav(){
-            var menu = document.getElementById("menu2");
-            menu.style.width = "0";
-        }
-        function openNav() {
-            var menu = document.getElementById("menu2");
-            menu.style.width = "60%"; 
-        }
-        function makeBlack(){
-            var scrollcount = window.scrollY;
-            if(scrollcount > 0){
-                document.getElementById("h1").style.backgroundColor = "rgb(0, 0, 0,"+scrollcount*0.005+")";
-            }
-            else{
-                document.getElementById("h1").style.backgroundColor = "rgb(0, 0, 0, 0.0)";
-            }
-        }
-        
-
-        function myFunction() {
-  var elmnt = document.getElementById("myDIV");
-  var x = elmnt.scrollLeft;
-  var y = elmnt.scrollTop;
-  document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
-}
-    </script>
-</body>
-</html>
+      .styled-select select {
+        background: transparent;
+        -webkit-appearance: none;
+        width: 100px;
+        font-size: 11px;
+        border: 0;
+        height: 17px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      
+      body {
+        background-color: #333333;
+        color: #FFFFFF;
+      }
+      
+      .block label {
+        color: white;
+      }
+  </HEAD>
+  
+  <BODY>
+    <p>
+    <form action="/prepareUpdateCategoryList.do?forwardto=search">
+  
+      <fieldset class="block" id="searchBlock">
+        <p>
+          <label style="width:80px">Class</label>
+          <div class="styled-select">
+            <select property="voucherCategoryClass">
+              <option value="0">Select </option>
+              <option value="7382">steam </option>
+          </select>
+          </div>
+  
+        </p>
+      </fieldset>
+    </form>
+  </BODY>
+  
+  </HTML>
