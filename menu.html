@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIV2EAT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        header{
+            background-color: rgb(0, 0, 0, 0.9);
+            z-index: 1;
+        }
+        .eatime{
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            margin-top: 10vh;
+            position: relative;
+        }
+        .eatime img{
+            filter: brightness(40%);
+            width: 100%;    
+        }
+        .eatime p{
+            position: absolute;
+            font-size: 50px;
+            color: aliceblue;
+            
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+            margin-top: 3%;
+        }
+        @media screen and (max-width: 480px) {
+            
+            .eatime img{
+                width: auto;
+                height: 200px;
+            }
+            .menus2{
+                z-index: 999;
+                top: 0pt;
+            }
+        }
+    </style>
+</head>
+
+<body onscroll="makeBlack()" id="bod">
+    <header id="h1">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h1>Liv2eat</h1></a>
+            </div>
+            <div class="menus">
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="reservation.html">RESERVATIONS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">FB</a>
+                    </li>
+                    <li>
+                        <a href="#">INSTA</a>
+                    </li>
+                    <li>
+                        <a href="#">TW</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="openNav()">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+    </header>
+
+    <div class="menus2" id="menu2">
+        <div class="close-nav" id="menu2_close" onclick="closeNav()">
+            <div id="line5"></div>
+            <div id="line4"></div>
+
+        </div>
+        <div class="menus">
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVATIONS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="eatime"><img src="images/breakfast.jpg" alt="nay dsiat"><p>BREAKFAST</p></div>
+    <div class="container">
+        <div class="eatime-menu">
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+        </div>
+    </div>
+
+
+    <div class="eatime"><img src="images/lunch.jpg" alt="nay dsiat"><p>LUNCH</p></div>
+    <div class="container">
+        <div class="eatime-menu">
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+        </div>
+    </div>
+
+
+    <div class="eatime"><img src="images/dinner.jpg" alt="nay dsiat"><p>DINNER</p></div>
+    <div class="container">
+        <div class="eatime-menu">
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+        </div>
+    </div>
+
+
+    <div class="eatime"><img src="images/desserts.jpg" alt="nay dsiat"><p>DESSERT</p></div>
+    <div class="container">
+        <div class="eatime-menu">
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+            <div class="menu-items"><h2 class="sub-header">Item name</h2><p class="item-price">150 Rs.</p><p>Seasonal fruit compote, homemade vanilla ice cream, wafer and</p></div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="bg-black">
+            <h1 class="name-h1">Liv2eat</h1>
+            <div class="connect">
+                <div class="connect-blocks">
+                    <h2 class="sub-header">OPEN TIME</h2>
+                    <p class='whiteob'>
+                        Monday - Friday :> 10 am - 12 am <br> Saturday - Sunday :> 7 pm - 1 am <br> Closed on Government
+                        Holiday's
+                    </p>
+                </div>
+                <div class="connect-blocks">
+                    <h2 class="sub-header">CONTACT US</h2>
+                    <p class='whiteob'>
+                        Block No-B 36 Saram Sky <br> Mumbai, Maharashtra <br> live2eat@gmail.com <br> +91 8721894575
+                    </p>
+                </div>
+                <div class="connect-blocks">
+                    <h2 class="sub-header">FOLLOW US</h2>
+                    <p class='whiteob'>
+                        Facebook <br> Instagram <br> twitter
+                    </p>
+                </div>
+            </div>
+            <div class="cpr">Copyright © 2020 Liv2eat India, Inc. All rights reserved</div>
+        </div>
+    </div>
+
+    <script>
+        function closeNav() {
+            var menu = document.getElementById("menu2");
+            menu.style.width = "0";
+            menu.style.boxShadow = "none";
+        }
+        function openNav() {
+            var menu = document.getElementById("menu2");
+            menu.style.width = "60%";
+            menu.style.boxShadow = "-200px 0px rgb(37, 37, 37, 0.8)";
+        }
+        function makeBlack() {
+            
+        }
+
+
+        function myFunction() {
+            var elmnt = document.getElementById("myDIV");
+            var x = elmnt.scrollLeft;
+            var y = elmnt.scrollTop;
+            document.getElementById("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        #myDIV {
-  height: 250px;
-  width: 250px;
-  overflow: auto;
-}
-
-#content {
-  height: 800px;
-  width: 2000px;
-  background-color: coral;
-}
+        header{
+            background-color: rgb(0, 0, 0, 0.9);
+            z-index: 1;
+        }
+        .reserv{
+            margin-top: 10%;
+        }
+        @media screen and (max-width: 480px) {
+            
+            .eatime img{
+                width: auto;
+                height: 200px;
+            }
+            .menus2{
+                z-index: 999;
+                top: 0pt;
+            }
+            .reserv{
+                margin-top: 25%;
+            }
+        }
     </style>
 </head>
+
 <body onscroll="makeBlack()" id="bod">
     <header id="h1">
         <nav>
-            <div class="logo"><a href="index.html"><h1>Liv2eat</h1></a></div>
+            <div class="logo">
+                <a href="index.html"><h1>Liv2eat</h1></a>
+            </div>
             <div class="menus">
                 <ul class="nav-links">
                     <li><a href="index.html">HOME</a></li>
@@ -50,14 +64,14 @@
                 <div id="line1"></div>
                 <div id="line2"></div>
                 <div id="line3"></div>
-            </div> 
+            </div>
     </header>
-    
+
     <div class="menus2" id="menu2">
         <div class="close-nav" id="menu2_close" onclick="closeNav()">
             <div id="line5"></div>
             <div id="line4"></div>
-            
+
         </div>
         <div class="menus">
             <ul class="nav-links">
@@ -68,45 +82,13 @@
             </ul>
         </div>
     </div>
-    <div class="home" id="hom"><div class="bg-black"><p>WELCOME TO</p><br><h1>Liv2eat Restaurant</h1><p>If you <br> Eat to Live we will make you <br> Live to Eat...</p></div></div>
-
-    <div class="story">
-        <div class="storyt">
-            <h1>Our Story...</h1>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered <br> alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't </p><p> anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators ob </p><p> n the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary
-            </p>
-        </div>
-        <div class="chef"></div>
-    </div>
-
-    <div class="specials"><div class="bg-black">
-        <h1>Daily Specials</h1><p>Lorem Ipsum is simply dummy typesetting <br> Lorem Ipsum has been the industry's</p>
-        
-        <div class="specialsg">
-            <div> 
-                <a href="#">
-                <img src="images/vegitarien.png" alt="veg"> <h2>veg specials</h2><p>It is a long established fact that a reader will be distracted by the readable</p></a>
-            </div> 
-            <div> 
-                <a href="#">
-                <img src="images/hamburge.png" alt="veg"> <h2>Big Meals</h2><p> content of a page when looking at its layout. The point of using</p></a>
-            </div> 
-            <div> 
-                <a href="#">
-                <img src="images/sea food.png" alt="veg"> <h2>Sea Food</h2><p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p></a>
-            </div> 
-            <div> 
-                <a href="#">
-                <img src="images/desert.png" alt="veg"> <h2>Desert</h2><p>now use Lorem Ipsum as their default model text, and a search for 'lorem</p></a>
-            </div> 
-        </div>
-
-        
-    </div></div>
 
     <div class="reserv">
         <h1>Reservation</h1>
         <form action="#" method="post">
+            <input type="text" placeholder="Name">  
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Contact">
             <input placeholder="Date" class="rdate" type="text" onfocus="(this.type='date', this.value='Date')" id="rdate" name="rdate">
             
             <br>
@@ -146,56 +128,59 @@
         </form>
         
     </div>
-    
-    
+
 
     <div class="footer">
         <div class="bg-black">
             <h1 class="name-h1">Liv2eat</h1>
             <div class="connect">
-                <div class="connect-blocks"><h2 class="sub-header">OPEN TIME</h2><p class='whiteob'>
-                    Monday - Friday :> 10 am - 12 am <br> Saturday - Sunday :> 7 pm - 1 am <br> Closed on Government Holiday's
-                </p></div>
-                <div class="connect-blocks"><h2 class="sub-header">CONTACT US</h2><p class='whiteob'>
-                    Block No-B 36 Saram Sky <br> Mumbai, Maharashtra <br> live2eat@gmail.com <br> +91 8721894575 
-                </p></div>
-                <div class="connect-blocks"><h2 class="sub-header">FOLLOW US</h2><p class='whiteob'>
-                    Facebook <br> Instagram <br> twitter
-                </p></div>
+                <div class="connect-blocks">
+                    <h2 class="sub-header">OPEN TIME</h2>
+                    <p class='whiteob'>
+                        Monday - Friday :> 10 am - 12 am <br> Saturday - Sunday :> 7 pm - 1 am <br> Closed on Government
+                        Holiday's
+                    </p>
+                </div>
+                <div class="connect-blocks">
+                    <h2 class="sub-header">CONTACT US</h2>
+                    <p class='whiteob'>
+                        Block No-B 36 Saram Sky <br> Mumbai, Maharashtra <br> live2eat@gmail.com <br> +91 8721894575
+                    </p>
+                </div>
+                <div class="connect-blocks">
+                    <h2 class="sub-header">FOLLOW US</h2>
+                    <p class='whiteob'>
+                        Facebook <br> Instagram <br> twitter
+                    </p>
+                </div>
             </div>
             <div class="cpr">Copyright © 2020 Liv2eat India, Inc. All rights reserved</div>
         </div>
     </div>
-    
+
     <script>
-        function closeNav(){
+        function closeNav() {
             var menu = document.getElementById("menu2");
             menu.style.width = "0";
             menu.style.boxShadow = "none";
         }
         function openNav() {
             var menu = document.getElementById("menu2");
-            menu.style.width = "60%"; 
+            menu.style.width = "60%";
             menu.style.boxShadow = "-200px 0px rgb(37, 37, 37, 0.8)";
         }
-        function makeBlack(){
-            var scrollcount = window.scrollY;
-            if(scrollcount > 0){
-                document.getElementById("h1").style.backgroundColor = "rgb(0, 0, 0,"+scrollcount*0.005+")";
-                
-            }
-            else{
-                document.getElementById("h1").style.backgroundColor = "rgb(0, 0, 0, 0.0)";
-            }
+        function makeBlack() {
+            
         }
-        
+
 
         function myFunction() {
-  var elmnt = document.getElementById("myDIV");
-  var x = elmnt.scrollLeft;
-  var y = elmnt.scrollTop;
-  document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
-}
+            var elmnt = document.getElementById("myDIV");
+            var x = elmnt.scrollLeft;
+            var y = elmnt.scrollTop;
+            document.getElementById("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px";
+        }
     </script>
 </body>
+
 </html>
