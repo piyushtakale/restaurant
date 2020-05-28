@@ -16,6 +16,16 @@
         .reserv{
             margin-top: 5%;
         }
+        .reserv input[type=text], .reserv textarea, .reserv input[type=date], .reserv select, .reserv input[type=submit]{
+            background-color: #f5f5f5;
+            
+            padding: 10px;
+            
+        }
+        .reserv input[type=text], .reserv textarea, .reserv input[type=date], .reserv select, .reserv input[type=submit]{
+            margin-top: 5%;
+            width: 350px;
+        }
         @media screen and (max-width: 480px) {
             
             .eatime img{
@@ -71,7 +81,6 @@
         <div class="close-nav" id="menu2_close" onclick="closeNav()">
             <div id="line5"></div>
             <div id="line4"></div>
-
         </div>
         <div class="menus">
             <ul class="nav-links">
@@ -82,53 +91,22 @@
             </ul>
         </div>
     </div>
-    <div class="eatime"><img src="images/reservation.jpg" alt="nay dsiat"><p>LUNCH</p></div>
+    <div class="eatime"><img src="images/contactus.jpg" alt="nay dsiat"><p>CONTACT US</p></div>
     <div class="reserv">
-        <h1>Reservation</h1>
+        <h1>Contact via Email</h1>
+        <p>Tell us about your experience <br>share your mamories <br> help us to make other people happy</p>
         <form action="#" method="post">
-            <input type="text" placeholder="Name">  
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Contact">
-            <input placeholder="Date" class="rdate" type="text" onfocus="(this.type='date', this.value='Date')" id="rdate" name="rdate">
+            <input type="text" name="name" placeholder="Name">  
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Subject">
+
+            <textarea rows="4" name="comment" placeholder="Type your message"></textarea>
             
             <br>
-            <select name="time" id="time">
-                <option value="0">Select Time</option> 
-                <option value="10:00 AM">10:00 AM</option>
-                <option value="11:00 AM">11:00 AM</option>
-                <option value="12:00 AM">12:00 PM</option>
-                <option value="01:00 AM">01:00 PM</option>
-                <option value="02:00 AM">02:00 PM</option>
-                <option value="03:00 AM">03:00 PM</option>
-                <option value="04:00 AM">04:00 PM</option>
-                <option value="05:00 AM">05:00 PM</option>
-                <option value="06:00 AM">06:00 PM</option>
-                <option value="07:00 AM">07:00 PM</option>
-                <option value="08:00 AM">08:00 PM</option>
-                <option value="09:00 AM">09:00 PM</option>
-                <option value="10:00 AM">10:00 PM</option>
-                <option value="11:00 AM">11:00 PM</option>
-                
-            </select>
-            <select name="time" id="time">
-                <option value="0">Number of People</option>
-                <option value="1">1 Person</option>
-                <option value="2">2 People</option>
-                <option value="3">3 People</option>
-                <option value="4">4 People</option>
-                <option value="5">5 People</option>
-                <option value="6">6 People</option>
-                <option value="7">7 People</option>
-                <option value="8">8 People</option>
-                <option value="9">9 People</option>
-                <option value="10">10 People</option>
-                
-            </select>
+            
             <input type="submit" id="submit" value="BOOK TABLE">
         </form>
-        
     </div>
-
 
     <div class="footer">
         <div class="bg-black">
